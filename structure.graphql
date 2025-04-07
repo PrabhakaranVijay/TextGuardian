@@ -1,0 +1,11 @@
+textguardian/
+│
+├── app.js                # Main Express server file
+├── package.json          # Node.js dependencies
+├── model.pkl             # Your pre-trained model
+├── analyze_text.py       # Python script to analyze text using the model
+│
+└── views/                # EJS templates
+    ├── index.ejs         # Home page with text input
+    └── about.ejs         # About page with project and developer info
+ 

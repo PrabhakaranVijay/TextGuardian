@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Text Moderation Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="min-h-screen flex flex-col bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+    <!-- Navbar -->
+    <nav class="bg-white dark:bg-gray-800 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-1 flex items-center justify-start">
+                    <a href="/" class="text-lg font-semibold text-gray-800 dark:text-white">Home</a>
+                </div>
+                <div class="flex-1 flex items-center justify-center">
+                    <a href="/" class="flex items-center">
+                        <span class="text-2xl font-bold text-blue-600 dark:text-blue-400">TextGuardian</span>
+                        <i class="fas fa-shield-alt ml-2 text-blue-600 dark:text-blue-400"></i>
+                    </a>
+                </div>
+                <div class="flex-1 flex items-center justify-end space-x-4">
+                    <a href="/about" class="text-gray-900 dark:text-white font-medium">About</a>
+                    <button id="theme-toggle" class="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:block"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+                <h1 class="text-2xl font-bold mb-6 text-center text-gray-800 dark:text-white">About TextGuardian</h1>
+                
+                <section class="mb-8">
+                    <h2 class="text-xl font-semibold mb-3 text-gray-800 dark:text-white">Project Overview</h2>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        TextGuardian is an advanced text moderation tool designed to identify potentially harmful or inappropriate content across multiple categories. Our AI model helps protect users by detecting various types of problematic content.
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        The model analyzes text inputs and classifies them across several moderation categories, providing probability scores for each. This allows users to understand exactly what type of content may be present and its severity.
+                    </p>
+                </section>
+                
+                <section class="mb-8">
+                    <h2 class="text-xl font-semibold mb-3 text-gray-800 dark:text-white">How It Works</h2>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        Our system uses a machine learning model trained on diverse text datasets to identify problematic content. When you submit text, our model:
+                    </p>
+                    <ol class="list-decimal pl-5 text-gray-600 dark:text-gray-300 space-y-2">
+                        <li>Analyzes the text for multiple categories of potentially harmful content</li>
+                        <li>Generates probability scores for each category</li>
+                        <li>Provides clear warnings for detected issues</li>
+                        <li>Maintains privacy by processing data locally</li>
+                    </ol>
+                </section>
+                
+                <section class="mb-8">
+                    <h2 class="text-xl font-semibold mb-3 text-gray-800 dark:text-white">Content Categories</h2>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        Our model detects multiple categories of content, including:
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-600 dark:text-gray-300 grid grid-cols-1 md:grid-cols-2 gap-2">
+                        <li><strong>OK</strong>: Safe content</li>
+                        <li><strong>H</strong>: Harassment content</li>
+                        <li><strong>S</strong>: Sexual content</li>
+                        <li><strong>SH</strong>: Self-harm content</li>
+                        <li><strong>V</strong>: Violent content</li>
+                        <li><strong>S3</strong>: Sexual content (severe)</li>
+                        <li><strong>V2</strong>: Violent content (severe)</li>
+                        <li><strong>HR</strong>: Harassment (severe)</li>
+                        <li><strong>H2</strong>: Harassment (moderate)</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2 class="text-xl font-semibold mb-3 text-gray-800 dark:text-white">Development Team</h2>
+                    
+                    <!-- Team Member 1 -->
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-16 w-16 flex items-center justify-center text-xl text-gray-600 dark:text-gray-300">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-gray-800 dark:text-white">Prabhakaran Vijay</h3>
+                            <p class="text-gray-600 dark:text-gray-300">AI Engineer & Full Stack Developer</p>
+                            <div class="flex space-x-3 mt-2">
+                                <a href="www.linkedin.com/in/prabhakaran-vijay" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/PrabhakaranVijay" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://medium.com/@prabhakaran.vijay.17" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
+                                    <i class="fab fa-medium"></i>
+                                </a>
+                                <!-- <a href="https://prabhakaranvijay.vercel.app" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
+                                    <i class="fas fa-globe"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Team Member 2 -->
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-16 w-16 flex items-center justify-center text-xl text-gray-600 dark:text-gray-300">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-gray-800 dark:text-white">Tejasri K</h3>
+                            <p class="text-gray-600 dark:text-gray-300">Full Stack Developer & UX Designer</p>
+                            <div class="flex space-x-3 mt-2">
+                                <a href="https://www.linkedin.com/in/tejasri-k-124a02279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <!-- <a href="https://github.com/member2" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
+                                    <i class="fab fa-github"></i>
+                                </a> -->
+                                <!-- <a href="https://medium.com/@member2" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
+                                    <i class="fab fa-medium"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Team Member 3 -->
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="bg-gray-200 dark:bg-gray-700 rounded-full h-16 w-16 flex items-center justify-center text-xl text-gray-600 dark:text-gray-300">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-gray-800 dark:text-white">R P Sathya Vardhana</h3>
+                            <p class="text-gray-600 dark:text-gray-300">ML Engineer</p>
+                            <div class="flex space-x-3 mt-2">
+                                <a href="https://www.linkedin.com/in/r-p-sathya-vardhana-413363262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <!-- <a href="https://github.com/member3" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
+                                    <i class="fab fa-github"></i>
+                                </a> -->
+                                <!-- <a href="https://medium.com/@member3" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
+                                    <i class="fab fa-medium"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 dark:text-gray-300 mt-4">
+                        Our team is passionate about creating AI tools that make the internet a safer place. With combined expertise in natural language processing, machine learning, and full-stack development, we created TextGuardian to help organizations and individuals identify potentially harmful content.
+                    </p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-800 shadow-inner py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-sm text-gray-600 dark:text-gray-400">© 2025 TextGuardian. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle functionality
+        document.getElementById('theme-toggle').addEventListener('click', function() {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+        });
+
+        // Set theme based on user preference
+        if (localStorage.getItem('theme') === 'dark' || 
+            (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</body>
+</html>
